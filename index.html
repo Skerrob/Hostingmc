@@ -12,7 +12,9 @@
         <nav>
             <ul>
                 <li><a href="#oferta">Oferta</a></li>
+                <li><a href="#serwery">Serwery</a></li>
                 <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#faq">FAQ</a></li>
             </ul>
         </nav>
     </header>
@@ -33,13 +35,61 @@
         </div>
     </section>
 
+    <section id="serwery">
+        <h2>Informacje o serwerach</h2>
+        <div class="server-status">
+            <h3>Serwer 1</h3>
+            <p>Status: Online</p>
+            <p>Sloty: 20/20</p>
+        </div>
+        <div class="server-status">
+            <h3>Serwer 2</h3>
+            <p>Status: Offline</p>
+            <p>Sloty: 0/20</p>
+        </div>
+    </section>
+
     <section id="kontakt">
         <h2>Kontakt</h2>
-        <p>Skontaktuj się z nami przez e-mail: kontakt@mchosting.pl</p>
+        <form action="https://formspree.io/f/mwkajvbe" method="POST">
+            <label for="name">Imię:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Wiadomość:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Wyślij</button>
+        </form>
+    </section>
+
+    <section id="faq">
+        <h2>Najczęściej zadawane pytania</h2>
+        <div class="faq-item">
+            <h3>Jak mogę rozpocząć korzystanie z hostingu?</h3>
+            <p>Aby rozpocząć, wybierz jeden z naszych planów i zarejestruj się.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Czy mogę przenieść swój istniejący serwer?</h3>
+            <p>Tak, oferujemy pomoc w migracji istniejących serwerów.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Jakie są metody płatności?</h3>
+            <p>Akceptujemy płatności przez PayPal oraz przelewy bankowe.</p>
+        </div>
     </section>
 
     <footer>
+        <div class="social-media">
+            <a href="https://www.youtube.com/@skerrobek" target="_blank">Youtube</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>
         <p>&copy; 2024 MC Hosting</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
